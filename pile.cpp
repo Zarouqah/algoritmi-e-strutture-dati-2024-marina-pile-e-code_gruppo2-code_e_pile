@@ -1,6 +1,6 @@
 //esercizio pila
-#include <iostream>
-#include "ListaPuntatori.cpp"  //includiamo lista puntatori che ci ha formito la prof l'altrp giorno
+#include <iostream>  // LIBRERIA
+#include "ListaPuntatori.cpp"  //includiamo lista puntatori che ci ha formito la prof l'altrp giorno //CHIAMATA A FUNZIONE
 template <typename T>
 class Pila {
 private:
@@ -13,7 +13,7 @@ public:
     }
 
     // Rimuove e restituendo l'elemento all'inizio dela pila
-    T pop() {
+    T pop() { //
         if (isEmpty()) {
             std::cout << "Errore: la pila è vuota." << std::endl;
             return T();  // Ritorna un valore di tipo T "vuoto" (definito dal costruttore di T)
